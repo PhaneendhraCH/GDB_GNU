@@ -1,0 +1,72 @@
+C Code :
+
+#include <stdio.h>
+
+int sum(int n) {
+    if (n != 0)
+        return n + sum(n-1); 
+    else
+        return n;
+}
+
+int main() {
+    int number=4, result;
+    result = sum(number);
+    printf("sum = %d", result);
+    return 0;
+}
+
+Commands Executed :
+
+gcc -g Factorial.c  -o rec
+ls -a
+
+start
+list
+break 12
+delete
+break 11 
+break 13
+info b
+continue
+continue
+continue
+delete 11
+info break
+delete 3
+delete 4
+info break
+n
+run
+n
+start
+info b
+n
+n
+set var number=5
+n
+print result
+n
+start
+n
+watch number
+i b
+display number 
+i b
+undisplay 1
+i b
+disable 7
+i b
+delete 
+list
+set listsize 16
+list
+l
+disass main
+info frame
+set history filename history_commands.txt
+set history save on
+quit
+
+-
+Phaneendhra
